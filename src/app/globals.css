@@ -89,4 +89,7 @@
   .sBtn {
     @apply bg-gradient-to-br from-foreground/20 to-foreground/0 text-foreground px-4 py-3 rounded-xl border border-foreground hover:from-foreground hover:to-foreground/30 hover:text-background duration-500 transition-all;
   }
+  .rBtn {
+    @apply bg-gradient-to-br from-primary/20 to-primary/0 text-primary px-3 py-3 rounded-full border border-primary hover:from-primary hover:to-primary/30 hover:text-background duration-500 transition-all;
+  }
 }
