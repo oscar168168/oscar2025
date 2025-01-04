@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { HeroSection } from "@/pages/HeroSection";
-import { PortfolioSection } from "@/pages/PortfolioSection";
+import { Hero } from "@/pages/Hero";
+import { Portfolio } from "@/pages/Portfolio";
 
 export default function Home() {
   return (
@@ -24,8 +24,8 @@ export default function Home() {
         />
       </div>
 
-      <HeroSection />  
-      <PortfolioSection />
+      <Hero />  
+      <Portfolio />
     </main>
   );
 }

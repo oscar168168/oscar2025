@@ -36,7 +36,7 @@ const portfolio = [
   },
 ];
 
-export const PortfolioSection = () => {
+export const Portfolio = () => {
   return (
     <main className="container mx-auto px-8 mb-20 flex flex-col justify-center items-start lg:gap-12 gap-8">
       <div className="space-y-4 lg:pr-8">
