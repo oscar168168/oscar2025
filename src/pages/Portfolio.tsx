@@ -16,20 +16,20 @@ const portfolio = [
   },
   {
     id: 2,
-    title: "E-Commerce Dashboard",
+    title: "Prometeus Website",
     description:
       "A comprehensive dashboard for managing online store operations with real-time analytics.",
-    image: "/images/prohr.png",
+    image: "/images/newweb.png",
     year: "2024",
     tags: ["Next.js", "React", "Tailwind"],
     isFeatured: true,
   },
   {
     id: 3,
-    title: "E-Commerce Dashboard",
+    title: "eReader Cambodia",
     description:
       "A comprehensive dashboard for managing online store operations with real-time analytics.",
-    image: "/images/prohr.png",
+    image: "/images/ereader.png",
     year: "2024",
     tags: ["Next.js", "React", "Tailwind"],
     isFeatured: true,
@@ -38,8 +38,8 @@ const portfolio = [
 
 const Portfolio = () => {
   return (
-    <main className="container mx-auto px-8 mb-20 flex flex-col justify-center items-start lg:gap-12 gap-8">
-      <div className="space-y-4 lg:pr-8">
+    <main className="container mx-auto px-8 mb-20 flex flex-col justify-center items-start lg:gap-20 gap-8">
+      <div className="space-y-6 lg:pr-8 lg:text-center">
         <h1>
           Creating Memorable Designs for{" "}
           <span className="text-primary">Web, Mobile,</span> and{" "}
@@ -52,17 +52,20 @@ const Portfolio = () => {
       </div>
       <div className="grid lg:grid-cols-3 lg:gap-6 gap-12">
         {portfolio.map((item) => (
-          <div key={item.id} className="space-y-6 rounded-xl shadow-md">
+          <div
+            key={item.id}
+            className="lg:space-y-4 space-y-2 rounded-xl bg-foreground/2 backdrop-blur"
+          >
             <div className="h-[300px]">
               <Image
                 src={item.image}
                 alt="Portfolio"
                 width={600}
                 height={600}
-                className="rounded-xl h-[300px] object-cover"
+                className=" rounded-t-xl h-[300px] object-cover"
               />
             </div>
-            <div className="space-y-3">
+            <div className="lg:space-y-3 space-y-2 p-4">
               <h4 className="">{item.title}</h4>
               <p>{item.description}</p>
               <hr />

@@ -1,9 +1,11 @@
-import Link from 'next/link';
-import React from 'react';
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
 const Hero = () => {
   return (
-    <main className="container mx-auto p-8 flex flex-col justify-center items-start min-h-screen lg:gap-12 gap-8">
+    <main className="container mx-auto p-8 flex flex-col justify-center items-start lg:min-h-screen min-h-[95vh] lg:gap-12 gap-8">
+      
       <h1 className="">
         Discover Your <span className="text-primary">Uniqueness</span>, Unlock
         Your <span className="text-primary">Creativity</span>.
@@ -14,11 +16,11 @@ const Hero = () => {
         through <span className="text-primary">UX/UI Design</span>.
       </p>
       <div className="flex gap-4">
-        <Link href="/about" className="pBtn">
-          Portfolio
+        <Link href="/portfolio" className="pBtn">
+          View My Work
         </Link>
-        <Link href="/about" className="sBtn">
-          Contact Me
+        <Link href="/contact" className="sBtn">
+          Let&apos;s Collaborate
         </Link>
       </div>
     </main>

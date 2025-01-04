@@ -6,21 +6,15 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <div
-        className="absolute top-0 left-0 -z-40"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "100vh",
-        }}
+        className="fixed -inset-[200px] -z-40"
       >
         <Image
           src="/icons/grid.svg"
           alt="Grid"
-          width={1600}
-          height={1600}
+          width={2000}
+          height={2000}
           priority
-          className="object-cover h-screen w-screen"
+          className="object-cover h-[2000px] w-[2000px] rotate-6"
         />
       </div>
 
