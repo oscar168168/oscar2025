@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Hero } from "@/pages/Hero";
-import { Portfolio } from "@/pages/Portfolio";
+import Hero from "@/pages/Hero";
+import Portfolio from "@/pages/Portfolio";
 
 export default function Home() {
   return (
