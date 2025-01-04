@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { HomePage } from "@/pages/HomePage";
+import PortfolioSlider from "@/components/PortfolioCard";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       </div>
 
       <HomePage />
+      <PortfolioSlider />
     </main>
   );
 }

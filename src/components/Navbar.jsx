@@ -8,16 +8,31 @@ import { Dialog, DialogPanel } from "@headlessui/react";
 
 const navlinks = [
   {
-    name: "Home",
+    name: "Home.",
     href: "#",
   },
   {
-    name: "About",
+    name: "Portfolio.",
     href: "#",
   },
   {
-    name: "Experience",
+    name: "Experience.",
     href: "#",
+  },
+];
+
+const links = [
+  {
+    src: "/images/linkedin.svg",
+    href: "https://www.linkedin.com/in/oscar-ramirez-9b5b3a1b7/",
+  },
+  {
+    src: "/images/behance.svg",
+    href: "https://www.behance.net/oscarramirez",
+  },
+  {
+    src: "/images/telegram.svg",
+    href: "https://t.me/oscar_ramirez",
   },
 ];
 
@@ -49,31 +64,11 @@ export const Navbar = () => {
         </Link>
 
         <div className="lg:flex gap-2 justify-end hidden">
-          <Link href="/contact" className="rBtn">
-            <Image
-              src="/images/linkedin.svg"
-              alt="Send"
-              width={16}
-              height={16}
-            />
-          </Link>
-
-          <Link href="/contact" className="rBtn">
-            <Image
-              src="/images/behance.svg"
-              alt="Send"
-              width={16}
-              height={16}
-            />
-          </Link>
-          <Link href="/contact" className="rBtn">
-            <Image
-              src="/images/telegram.svg"
-              alt="Send"
-              width={16}
-              height={16}
-            />
-          </Link>
+          {links.map((item) => (
+            <Link href={item.href} key={item.href} className="rBtn">
+              <Image src={item.src} alt="Send" width={16} height={16} />
+            </Link>
+          ))}
         </div>
 
         <div className="lg:hidden flex justify-end">
@@ -113,12 +108,12 @@ export const Navbar = () => {
               </button>
             </div>
 
-            <div className="flex flex-col gap-12 justify-center items-center h-[calc(100vh-104px)]">
+            <div className="flex flex-col gap-12 h-[calc(100vh-104px)] px-4 py-40">
               {navlinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`block lg:hidden text-3xl font-light link ${
+                  className={`block text-6xl font-light link ${
                     pathname === link.href
                       ? "text-primary"
                       : "text-foreground hover:text-primary"
@@ -127,6 +122,14 @@ export const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
+              <hr />
+              <div className="flex gap-6">
+                {links.map((item) => (
+                  <Link href={item.href} key={item.href} className="rBtn">
+                    <Image src={item.src} alt="Send" width={24} height={24} />
+                  </Link>
+                ))}
+              </div>
             </div>
           </DialogPanel>
         </div>
