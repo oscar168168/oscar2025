@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-export const HomePage = () => {
+export const HeroSection = () => {
   return (
     
     <main className="container mx-auto p-8 flex flex-col justify-center items-start min-h-screen lg:gap-12 gap-8">

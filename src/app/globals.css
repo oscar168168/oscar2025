@@ -61,9 +61,11 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   h1 {
     @apply lg:text-9xl text-6xl tracking-tighter font-normal;
   }
@@ -80,16 +82,17 @@
     @apply lg:text-xl text-base tracking-tight font-light;
   }
   p {
-    @apply lg:text-lg text-sm tracking-wider leading-8 font-light text-foreground/80;
+    @apply lg:text-lg text-sm tracking-wider lg:leading-7 font-light text-foreground/80;
   }
 
   .pBtn {
-    @apply bg-gradient-to-br from-primary/20 to-primary/0 text-primary px-4 py-3 rounded-xl border border-primary hover:from-primary hover:to-primary/30 hover:text-background duration-500 transition-all;
+    @apply bg-gradient-to-br from-primary/20 to-primary/0 text-primary px-4 py-3 rounded-xl border border-primary hover:from-primary hover:to-primary/30  duration-500 transition-all;
   }
   .sBtn {
-    @apply bg-gradient-to-br from-foreground/20 to-foreground/0 text-foreground px-4 py-3 rounded-xl border border-foreground hover:from-foreground hover:to-foreground/30 hover:text-background duration-500 transition-all;
+    @apply bg-gradient-to-br from-foreground/20 to-foreground/0 text-foreground px-4 py-3 rounded-xl border border-foreground hover:from-foreground hover:to-foreground/30  duration-500 transition-all;
   }
   .rBtn {
-    @apply bg-gradient-to-br from-primary/20 to-primary/0 text-primary px-3 py-3 rounded-full border border-primary hover:from-primary hover:to-primary/30 hover:text-background duration-500 transition-all;
+    @apply bg-gradient-to-br from-primary/20 to-primary/0 text-primary px-3 py-3 rounded-full border border-primary hover:from-primary hover:to-primary/30  duration-500 transition-all;
   }
+
 }

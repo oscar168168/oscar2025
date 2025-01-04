@@ -23,15 +23,15 @@ const navlinks = [
 
 const links = [
   {
-    src: "/images/linkedin.svg",
+    src: "/icons/linkedin.svg",
     href: "https://www.linkedin.com/in/oscar-ramirez-9b5b3a1b7/",
   },
   {
-    src: "/images/behance.svg",
+    src: "/icons/behance.svg",
     href: "https://www.behance.net/oscarramirez",
   },
   {
-    src: "/images/telegram.svg",
+    src: "/icons/telegram.svg",
     href: "https://t.me/oscar_ramirez",
   },
 ];
@@ -76,7 +76,7 @@ export const Navbar = () => {
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="rBtn"
           >
-            <Image src="/images/menu.svg" alt="Send" width={16} height={16} />
+            <Image src="/icons/menu.svg" alt="Send" width={16} height={16} />
           </button>
         </div>
       </div>
@@ -100,7 +100,7 @@ export const Navbar = () => {
               >
                 <span className="sr-only">Close menu</span>
                 <Image
-                  src="/images/close.svg"
+                  src="/icons/close.svg"
                   alt="Send"
                   width={16}
                   height={16}

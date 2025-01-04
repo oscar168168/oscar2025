@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { HomePage } from "@/pages/HomePage";
-import PortfolioSlider from "@/components/PortfolioCard";
+import { HeroSection } from "@/pages/HeroSection";
+import { PortfolioSection } from "@/pages/PortfolioSection";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
         }}
       >
         <Image
-          src="/images/grid.svg"
+          src="/icons/grid.svg"
           alt="Grid"
           width={1600}
           height={1600}
@@ -24,8 +24,8 @@ export default function Home() {
         />
       </div>
 
-      <HomePage />
-      <PortfolioSlider />
+      <HeroSection />  
+      <PortfolioSection />
     </main>
   );
 }
