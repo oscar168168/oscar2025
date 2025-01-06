@@ -76,13 +76,14 @@
     @apply lg:text-5xl text-2xl tracking-tight font-normal;
   }
   h4 {
-    @apply lg:text-3xl text-lg tracking-tight font-normal;
+    @apply lg:text-2xl text-lg tracking-tight font-normal;
   }
   h5 {
     @apply lg:text-xl text-base tracking-tight font-light;
   }
   p {
-    @apply lg:text-lg text-sm tracking-wider lg:leading-7 font-light text-foreground/80;
+    @apply lg:text-lg text-sm tracking-wider lg:leading-7 font-extralight text-foreground/80;
+    font-family: "Poppins", sans-serif;
   }
 
   .pBtn {

@@ -7,8 +7,7 @@ const portfolio = [
   {
     id: 1,
     title: "Prometeus HR",
-    description:
-      "A comprehensive dashboard for managing online store operations with real-time analytics.",
+    description: "Mobile App Design",
     image: "/images/prohr.png",
     year: "2024",
     tags: ["Next.js", "React", "Tailwind"],
@@ -17,8 +16,7 @@ const portfolio = [
   {
     id: 2,
     title: "Prometeus Website",
-    description:
-      "A comprehensive dashboard for managing online store operations with real-time analytics.",
+    description: "Website Design",
     image: "/images/newweb.png",
     year: "2024",
     tags: ["Next.js", "React", "Tailwind"],
@@ -27,8 +25,7 @@ const portfolio = [
   {
     id: 3,
     title: "eReader Cambodia",
-    description:
-      "A comprehensive dashboard for managing online store operations with real-time analytics.",
+    description: "Mobile App Design",
     image: "/images/ereader.png",
     year: "2024",
     tags: ["Next.js", "React", "Tailwind"],
@@ -52,9 +49,10 @@ const Portfolio = () => {
       </div>
       <div className="grid lg:grid-cols-3 lg:gap-6 gap-12">
         {portfolio.map((item) => (
-          <div
+          <Link
+            href={`/portfolio/${item.id}`}
             key={item.id}
-            className="lg:space-y-4 space-y-2 rounded-xl bg-foreground/2 backdrop-blur"
+            className="lg:space-y-4 space-y-2 rounded-xl"
           >
             <div className="h-[300px]">
               <Image
@@ -62,18 +60,36 @@ const Portfolio = () => {
                 alt="Portfolio"
                 width={600}
                 height={600}
-                className=" rounded-t-xl h-[300px] object-cover"
+                className=" rounded-t h-[300px] object-cover"
               />
             </div>
-            <div className="lg:space-y-3 space-y-2 p-4">
+            <div className="space-y-2">
               <h4 className="">{item.title}</h4>
               <p>{item.description}</p>
               <hr />
-              <p className="text-foreground/50 lg:text-sm text-xs">
-                {item.year}
-              </p>
+              <div className="flex w-full justify-between">
+                <p className="text-foreground/50 lg:text-sm text-xs font-medium">
+                  {item.year}
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  height="16"
+                  color="#b9ff66"
+                  fill="none"
+                >
+                  <path
+                    d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18"
+                    stroke="currentColor"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
       <div className="flex w-full  lg:justify-end">
@@ -90,9 +106,9 @@ const Portfolio = () => {
             <path
               d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18"
               stroke="currentColor"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </Link>
