@@ -7,10 +7,10 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   weight: ["300", "500", "600", "700"],
 });
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "600", "700"],
-});
+// const poppins = Poppins({
+//   subsets: ["latin"],
+//   weight: ["200", "300", "400", "500", "600", "700"],
+// });
 
 export const metadata: Metadata = {
   title: "Rat Raksmey - Portfolio",
