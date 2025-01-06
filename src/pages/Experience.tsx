@@ -52,9 +52,9 @@ const Experience = () => {
             className="grid grid-cols-3 gap-6 w-full  text-start"
           >
             <div className="col-span-1 ">
-              <p className="text-primary lg:pt-0 pt-1">{item.year}</p>
+              <p className="text-primary font-normal pt-1">{item.year}</p>
             </div>
-            <div className="col-span-2">
+            <div className="col-span-2 lg:space-y-2">
               <h4>{item.title}</h4>
               <h5 className="italic text-normal">{item.company}</h5>
               <br />

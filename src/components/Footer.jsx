@@ -19,19 +19,36 @@ const links = [
 
 export const Footer = () => {
   return (
-    <main className="mx-auto p-8 flex flex-col justify-center items-center pt-16 lg:gap-12 gap-8 bg-background border-t">
+    <main className="mx-auto p-8 flex flex-col justify-center items-center pt-16 lg:gap-12 gap-8 bg-background/75 backdrop-blur border-t">
       <div className="container mx-auto grid grid-cols-2 gap-6">
         <div className="space-y-4">
-          <h4 className="font-bold">Contact Me</h4>
-          <div className="space-y-2">
-            <Link href="mailto:ratraksmey4@gmail.com">
+          <h4 className="font-bold text-primary">Contact Me</h4>
+          <div className="space-y-3">
+            <Link
+              className="hover:underline"
+              target="_blank"
+              href="mailto:ratraksmey4@gmail.com"
+            >
               <p>ratraksmey4@gmail.com</p>
             </Link>
-            <p>Prey Sa, Dangkao, Phnom Penh</p>
+            <Link
+              className="hover:underline"
+              target="_blank"
+              href="https://maps.app.goo.gl/du1WMDmRQW88cvcq6"
+            >
+              <p>Prey Sa, Dangkao, Phnom Penh</p>
+            </Link>
+            <Link
+              className="hover:underline"
+              target="_blank"
+              href="tel: +855 11 25 95 81"
+            >
+              <p>+855 11 25 95 81</p>
+            </Link>
           </div>
         </div>
         <div className="space-y-4 text-end">
-          <h4 className="font-bold">Keep in Touch</h4>
+          <h4 className="font-bold text-primary">Keep in Touch</h4>
           <div className="flex gap-2 justify-end">
             {links.map((item) => (
               <Link href={item.href} key={item.href} className="rBtn">
@@ -43,7 +60,7 @@ export const Footer = () => {
       </div>
       <hr className="w-full " />
       <p className="text-center text-foreground/30">
-        © {new Date().getFullYear()} Oscar. All rights reserved.
+        © {new Date().getFullYear()} Rat Raksmey. All rights reserved.
       </p>
     </main>
   );

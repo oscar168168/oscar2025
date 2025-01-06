@@ -1,4 +1,5 @@
 import CVDownloadButton from "@/components/DownloadBTN";
+import Image from "next/image";
 import React from "react";
 
 const About = () => {
@@ -7,7 +8,7 @@ const About = () => {
       <div className="lg:-space-y-20 -space-y-12 text-center">
         <h1 className="lg:text-[200px] text-[120px]">&quot;</h1>
         <h2 className="bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/60 py-1">
-          Hi, I&apos;m <span className="text-primary">Rat Raksmey</span>, a
+          Hey, I&apos;m <span className="text-primary">Rat Raksmey</span>, a
           passionate <span className="text-primary">UX/UI</span> designer who
           loves turning complex ideas into{" "}
           <span className="text-primary">user-friendly experiences</span>. With{" "}
@@ -19,8 +20,14 @@ const About = () => {
           business goals. <span></span>
         </h2>
       </div>
+      <Image
+        src="/images/profile2.png"
+        alt="me"
+        width={120}
+        height={120}
+        className="rounded-full border-primary"
+      />
       <CVDownloadButton cvUrl="/images/account.png" />
-      <hr className="w-full border-primary/50" />
     </main>
   );
 };

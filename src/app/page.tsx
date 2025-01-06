@@ -11,10 +11,10 @@ export default function Home() {
         <Image
           src="/icons/grid.svg"
           alt="Grid"
-          width={2000}
-          height={2000}
+          width={1500}
+          height={1500}
           priority
-          className="object-cover h-[2000px] w-[2000px] rotate-6 lg:scale-110 scale-125"
+          className="object-cover h-full w-full rotate-6 lg:scale-110 scale-125"
         />
       </div>
       <Hero />

@@ -84,7 +84,7 @@ const Portfolio = () => {
     switch (activeTab) {
       case "all":
         return (
-          <div className="space-y-12">
+          <div className="lg:space-y-20 space-y-12">
             <div className="grid lg:grid-cols-3 lg:gap-6 gap-12">
               {portfolio.map((item) => (
                 <Link
@@ -116,7 +116,7 @@ const Portfolio = () => {
                         viewBox="0 0 24 24"
                         width="16"
                         height="16"
-                        color="#b9ff66"
+                        color="#fff"
                         fill="none"
                       >
                         <path
@@ -163,7 +163,7 @@ const Portfolio = () => {
                         viewBox="0 0 24 24"
                         width="16"
                         height="16"
-                        color="#b9ff66"
+                        color="#ff"
                         fill="none"
                       >
                         <path
@@ -214,7 +214,7 @@ const Portfolio = () => {
                       viewBox="0 0 24 24"
                       width="16"
                       height="16"
-                      color="#b9ff66"
+                      color="#fff"
                       fill="none"
                     >
                       <path
@@ -264,7 +264,7 @@ const Portfolio = () => {
                       viewBox="0 0 24 24"
                       width="16"
                       height="16"
-                      color="#b9ff66"
+                      color="#fff"
                       fill="none"
                     >
                       <path
@@ -286,7 +286,10 @@ const Portfolio = () => {
     }
   };
   return (
-    <main id="portfolio" className="container mx-auto px-8 mb-20 flex flex-col justify-center items-start lg:gap-20 gap-8 min-h-screen">
+    <main
+      id="portfolio"
+      className="container mx-auto px-8 mb-20 flex flex-col justify-center items-start lg:gap-20 gap-8 min-h-screen"
+    >
       <div className="space-y-6 lg:pr-8 lg:text-center">
         <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/60">
           Creating Memorable Designs for{" "}
@@ -306,11 +309,9 @@ const Portfolio = () => {
               onClick={() => setActiveTab(tab.id)}
               className={`${
                 activeTab === tab.id ? "pBtn text-primary" : "sBtn"
-              } flex gap-2 items-center py-2 rounded-full`}
+              } flex gap-2 items-center py-2 rounded-full lg:text-sm text-foreground text-xs font-normal`}
             >
-              <p className="lg:text-sm text-foreground text-xs font-normal">
-                {tab.name}
-              </p>
+              {tab.name}
             </button>
           ))}
         </div>

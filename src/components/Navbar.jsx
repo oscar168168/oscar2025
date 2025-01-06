@@ -62,8 +62,8 @@ export const Navbar = () => {
           ))}
         </ul>
         <Link href="/">
-          <h3 className="text-primary lg:text-3xl uppercase lg:text-center">
-            Oscar<span className="text-foreground">.</span>
+          <h3 className="text-primary lg:text-3xl lg:text-center">
+            Rat Raksmey<span className="text-foreground">.</span>
           </h3>
         </Link>
 
