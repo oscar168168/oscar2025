@@ -288,7 +288,7 @@ const Portfolio = () => {
   return (
     <main id="portfolio" className="container mx-auto px-8 mb-20 flex flex-col justify-center items-start lg:gap-20 gap-8 min-h-screen">
       <div className="space-y-6 lg:pr-8 lg:text-center">
-        <h1>
+        <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/60">
           Creating Memorable Designs for{" "}
           <span className="text-primary">Web, Mobile,</span> and{" "}
           <span className="text-primary">Digital Experiences</span>{" "}

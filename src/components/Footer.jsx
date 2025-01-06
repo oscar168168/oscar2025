@@ -23,7 +23,7 @@ export const Footer = () => {
       <div className="container mx-auto grid grid-cols-2 gap-6">
         <div className="space-y-4">
           <h4 className="font-bold">Contact Me</h4>
-          <div>
+          <div className="space-y-2">
             <Link href="mailto:ratraksmey4@gmail.com">
               <p>ratraksmey4@gmail.com</p>
             </Link>
@@ -32,7 +32,7 @@ export const Footer = () => {
         </div>
         <div className="space-y-4 text-end">
           <h4 className="font-bold">Keep in Touch</h4>
-          <div className="lg:flex gap-2 justify-end hidden">
+          <div className="flex gap-2 justify-end">
             {links.map((item) => (
               <Link href={item.href} key={item.href} className="rBtn">
                 <Image src={item.src} alt="Send" width={16} height={16} />
@@ -41,7 +41,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <hr className="w-full border" />
+      <hr className="w-full " />
       <p className="text-center text-foreground/30">
         © {new Date().getFullYear()} Oscar. All rights reserved.
       </p>

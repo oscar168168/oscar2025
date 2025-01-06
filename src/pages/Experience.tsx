@@ -11,19 +11,27 @@ const experiences = [
   },
   {
     id: 2,
-    title: "UX/UI Designer",
-    company: "Prometeus KC Co., Ltd.",
+    title: "IT Technician",
+    company: "Mytech Mobility Cambodia Co., Ltd.",
     description:
-      "Leading user research through surveys, interviews, and usability testing. Designing user interfaces that are intuitive and visually cohesive. Collaborating with developers to ensure seamless implementation. Conducting usability tests to gather valuable feedback.",
-    year: "2023 - Present",
+      "Providing technical support to users and resolving technical issues. Performing system updates and maintenance to ensure smooth operation. Collaborating with developers to troubleshoot and resolve technical issues.",
+    year: "Jan, 2023 - Nov, 2023",
   },
   {
     id: 3,
-    title: "UX/UI Designer",
-    company: "Prometeus KC Co., Ltd.",
+    title: "Project Officer",
+    company: "Mytech Mobility Cambodia Co., Ltd.",
     description:
-      "Leading user research through surveys, interviews, and usability testing. Designing user interfaces that are intuitive and visually cohesive. Collaborating with developers to ensure seamless implementation. Conducting usability tests to gather valuable feedback.",
-    year: "2023 - Present",
+      "Leading project plans, managing resources, and ensuring on-time delivery. Collaborating with team members to implement project ideas. Providing feedback on project progress to guide the team towards success.",
+    year: "May, 2022 - Jan, 2023",
+  },
+  {
+    id: 4,
+    title: "Teacher Assistant",
+    company: "DK Schoolhouse",
+    description:
+      "Assisting in the teaching and learning process by providing support and guidance to students. Working closely with teachers to ensure that students have a positive learning experience.",
+    year: "Oct, 2021 - Dec, 2022",
   },
 ];
 
@@ -43,8 +51,8 @@ const Experience = () => {
             key={item.id}
             className="grid grid-cols-3 gap-6 w-full  text-start"
           >
-            <div className="col-span-1">
-              <p>{item.year}</p>
+            <div className="col-span-1 ">
+              <p className="text-primary lg:pt-0 pt-1">{item.year}</p>
             </div>
             <div className="col-span-2">
               <h4>{item.title}</h4>

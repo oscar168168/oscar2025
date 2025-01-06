@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <main className="container mx-auto p-8 flex flex-col justify-center items-start lg:min-h-screen min-h-[95vh] lg:gap-12 gap-8">
       
-      <h1 className="">
+      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/60">
         Discover Your <span className="text-primary">Uniqueness</span>, Unlock
         Your <span className="text-primary">Creativity</span>.
       </h1>

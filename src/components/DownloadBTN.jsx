@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { Download } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const CVDownloadButton = ({ cvUrl = "/images/account.png" }) => {
   const handleDownload = () => {
@@ -15,8 +14,8 @@ const CVDownloadButton = ({ cvUrl = "/images/account.png" }) => {
   };
 
   return (
-    <button className="pBtn flex gap-2" onClick={handleDownload}>
-      <Download className="" />
+    <button className="pBtn flex items-center gap-2" onClick={handleDownload}>
+      <Download size={20} className="" />
       Download CV
     </button>
   );
