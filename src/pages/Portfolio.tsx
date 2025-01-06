@@ -10,7 +10,7 @@ const portfolio = [
     description: "Mobile App Design",
     image: "/images/prohr.png",
     year: "2024",
-    tags: ["Next.js", "React", "Tailwind"],
+    link: "https://www.behance.net/raksmeyrat",
     isFeatured: true,
   },
   {
@@ -19,7 +19,7 @@ const portfolio = [
     description: "Website Design",
     image: "/images/newweb.png",
     year: "2024",
-    tags: ["Next.js", "React", "Tailwind"],
+    link: "https://www.behance.net/raksmeyrat",
     isFeatured: true,
   },
   {
@@ -28,7 +28,7 @@ const portfolio = [
     description: "Mobile App Design",
     image: "/images/ereader.png",
     year: "2024",
-    tags: ["Next.js", "React", "Tailwind"],
+    link: "https://www.behance.net/raksmeyrat",
     isFeatured: true,
   },
 ];
@@ -40,7 +40,7 @@ const caseStudies = [
     description: "Mobile App Design",
     image: "/images/prohr.png",
     year: "2024",
-    tags: ["Next.js", "React", "Tailwind"],
+    link: "https://www.behance.net/raksmeyrat",
     isFeatured: true,
   },
   {
@@ -49,7 +49,7 @@ const caseStudies = [
     description: "Website Design",
     image: "/images/account.png",
     year: "2024",
-    tags: ["Next.js", "React", "Tailwind"],
+    link: "https://www.behance.net/raksmeyrat",
     isFeatured: true,
   },
   {
@@ -58,7 +58,7 @@ const caseStudies = [
     description: "Mobile App Design",
     image: "/images/ereader.png",
     year: "2024",
-    tags: ["Next.js", "React", "Tailwind"],
+    link: "https://www.behance.net/raksmeyrat",
     isFeatured: true,
   },
 ];
@@ -88,7 +88,9 @@ const Portfolio = () => {
             <div className="grid lg:grid-cols-3 lg:gap-6 gap-12">
               {portfolio.map((item) => (
                 <Link
-                  href={`/portfolio/${item.id}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={item.link}
                   key={item.id}
                   className="lg:space-y-4 space-y-2 rounded-xl"
                 >
@@ -133,7 +135,9 @@ const Portfolio = () => {
             <div className="grid lg:grid-cols-3 lg:gap-6 gap-12">
               {caseStudies.map((item) => (
                 <Link
-                  href={`/portfolio/${item.id}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={item.link}
                   key={item.id}
                   className="lg:space-y-4 space-y-2 rounded-xl"
                 >
@@ -182,8 +186,10 @@ const Portfolio = () => {
           <div className="grid lg:grid-cols-3 lg:gap-6 gap-12">
             {portfolio.map((item) => (
               <Link
-                href={`/portfolio/${item.id}`}
+                href={item.link}
                 key={item.id}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="lg:space-y-4 space-y-2 rounded-xl"
               >
                 <div className="h-[300px]">
@@ -230,6 +236,8 @@ const Portfolio = () => {
           <div className="grid lg:grid-cols-3 lg:gap-6 gap-12">
             {caseStudies.map((item) => (
               <Link
+                target="_blank"
+                rel="noopener noreferrer"
                 href={`/portfolio/${item.id}`}
                 key={item.id}
                 className="lg:space-y-4 space-y-2 rounded-xl"
@@ -309,7 +317,12 @@ const Portfolio = () => {
         <div>{renderTabContent()}</div>
       </div>
       <div className="flex w-full  lg:justify-end">
-        <Link href="/about" className="pBtn flex gap-2 items-center">
+        <Link
+          href="https://www.behance.net/raksmeyrat"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="pBtn flex gap-2 items-center"
+        >
           View More Projects{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
