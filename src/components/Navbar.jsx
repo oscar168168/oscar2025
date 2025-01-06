@@ -9,15 +9,19 @@ import { Dialog, DialogPanel } from "@headlessui/react";
 const navlinks = [
   {
     name: "Home.",
-    href: "#",
+    href: "#home",
+  },
+  {
+    name: "About.",
+    href: "#about",
   },
   {
     name: "Portfolio.",
-    href: "#",
+    href: "#portfolio",
   },
   {
     name: "Experience.",
-    href: "#",
+    href: "#experience",
   },
 ];
 
@@ -32,7 +36,7 @@ const links = [
   },
   {
     src: "/icons/telegram.svg",
-    href: "https://t.me/oscar_ramirez",
+    href: "https://t.me/doublepainz",
   },
 ];
 

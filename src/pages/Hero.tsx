@@ -9,7 +9,7 @@ const Hero = () => {
         Discover Your <span className="text-primary">Uniqueness</span>, Unlock
         Your <span className="text-primary">Creativity</span>.
       </h1>
-      <p className="lg:text-2xl text-base">
+      <p className="lg:text-2xl text-base font-light">
         I am Raksmey, a <span className="text-primary">UX/UI Designer</span>. I
         specialize in crafting intuitive and visually appealing user experiences
         through <span className="text-primary">UX/UI Design</span>.

@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Hero from "@/pages/Hero";
 import Portfolio from "@/pages/Portfolio";
+import About from "@/pages/About";
+import Experience from "@/pages/Experience";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main id="home" className="min-h-screen">
       <div className="fixed -z-40 h-screen w-screen">
         <Image
           src="/icons/grid.svg"
@@ -16,7 +18,9 @@ export default function Home() {
         />
       </div>
       <Hero />
+      <About />
       <Portfolio />
+      <Experience />
     </main>
   );
 }

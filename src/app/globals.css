@@ -29,6 +29,7 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+
   .dark {
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
@@ -64,36 +65,45 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-space-grotesk);
+
   }
 
   h1 {
     @apply lg:text-9xl text-6xl tracking-tighter font-normal;
   }
+
   h2 {
     @apply lg:text-7xl text-4xl tracking-tight font-normal;
   }
+
   h3 {
     @apply lg:text-5xl text-2xl tracking-tight font-normal;
   }
+
   h4 {
     @apply lg:text-2xl text-lg tracking-tight font-normal;
   }
+
   h5 {
     @apply lg:text-xl text-base tracking-tight font-light;
   }
+
   p {
-    @apply lg:text-lg text-sm tracking-wider lg:leading-7 font-extralight text-foreground/80;
-    font-family: "Poppins", sans-serif;
+    @apply lg:text-base text-sm tracking-wider lg:leading-7 font-extralight text-foreground/80;
+    font-family: var(--font-poppins);
   }
 
   .pBtn {
-    @apply bg-gradient-to-br from-primary/20 to-primary/0 text-primary px-4 py-3 backdrop-blur rounded-xl border border-primary hover:from-primary hover:to-primary/30  duration-500 transition-all;
+    @apply bg-gradient-to-br from-primary/20 to-primary/0 text-primary px-4 py-3 backdrop-blur rounded-xl border border-primary hover:from-primary hover:to-primary/30 duration-500 transition-all;
   }
+
   .sBtn {
-    @apply bg-gradient-to-br from-foreground/20 to-foreground/0 text-foreground backdrop-blur  px-4 py-3 rounded-xl border border-foreground hover:from-foreground hover:to-foreground/30  duration-500 transition-all;
+    @apply bg-gradient-to-br from-foreground/20 to-foreground/0 text-foreground backdrop-blur px-4 py-3 rounded-xl border border-foreground hover:from-foreground hover:to-foreground/30 duration-500 transition-all;
   }
+
   .rBtn {
-    @apply bg-gradient-to-br from-primary/20 to-primary/0 text-primary px-3 backdrop-blur py-3 rounded-full border border-primary hover:from-primary hover:to-primary/30  duration-500 transition-all;
+    @apply bg-gradient-to-br from-primary/20 to-primary/0 text-primary px-3 backdrop-blur py-3 rounded-full border border-primary hover:from-primary hover:to-primary/30 duration-500 transition-all;
   }
 
 }
