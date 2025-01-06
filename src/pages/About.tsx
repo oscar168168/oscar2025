@@ -5,7 +5,7 @@ const About = () => {
   return (
     <main id="about" className="container mx-auto p-8 flex flex-col justify-center items-center lg:min-h-screen min-h-[100vh] lg:gap-12 gap-8 lg:mb-20 mb-12">
       <div className="lg:-space-y-20 -space-y-12 text-center">
-        <h1 className="lg:text-[200px] text-[120px]">"</h1>
+        <h1 className="lg:text-[200px] text-[120px]">&quot;</h1>
         <h2 className="">
           Hi, I&apos;m <span className="text-primary">Rat Raksmey</span>, a
           passionate <span className="text-primary">UX/UI</span> designer who
