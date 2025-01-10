@@ -6,29 +6,30 @@ import React, { useState } from "react";
 const portfolio = [
   {
     id: 1,
-    title: "Prometeus HR",
+    title: "eReader Cambodia",
     description: "Mobile App Design",
-    image: "/images/prohr.png",
+    image: "/images/ereader.png",
     year: "2024",
-    link: "https://www.behance.net/raksmeyrat",
+    link: "https://www.behance.net/gallery/205182233/eReader-Mobile-Application",
     isFeatured: true,
   },
   {
     id: 2,
     title: "Prometeus Website",
     description: "Website Design",
-    image: "/images/newweb.png",
-    year: "2024",
-    link: "https://www.behance.net/raksmeyrat",
+    image: "/images/oldweb.png",
+    year: "2023",
+    link: "https://prometeus-kc.com/",
     isFeatured: true,
   },
+
   {
     id: 3,
-    title: "eReader Cambodia",
-    description: "Mobile App Design",
-    image: "/images/ereader.png",
-    year: "2024",
-    link: "https://www.behance.net/raksmeyrat",
+    title: "Monaco Byte Labs",
+    description: "Website Design",
+    image: "/images/monoca.png",
+    year: "2023",
+    link: "https://monacobytelabs.com/",
     isFeatured: true,
   },
 ];
@@ -36,29 +37,30 @@ const portfolio = [
 const caseStudies = [
   {
     id: 1,
-    title: "Prometeus HR",
+    title: "Electro Mart",
     description: "Mobile App Design",
-    image: "/images/prohr.png",
+    image: "/images/electromart.png",
     year: "2024",
-    link: "https://www.behance.net/raksmeyrat",
+    link: "https://www.behance.net/gallery/216323099/Case-Study-ElectroMart-Moble-Appication",
     isFeatured: true,
   },
   {
     id: 2,
-    title: "Prometeus Website",
-    description: "Website Design",
-    image: "/images/account.png",
+    title: "Prometeus HR",
+    description: "Mobile App Design",
+    image: "/images/prohr.png",
     year: "2024",
-    link: "https://www.behance.net/raksmeyrat",
-    isFeatured: true,
+    link: "https://www.behance.net/gallery/205166097/Prometeus-HR-Mobile-Application",
+    isFeatured: false,
   },
+
   {
     id: 3,
-    title: "eReader Cambodia",
+    title: "Music Streaming App",
     description: "Mobile App Design",
-    image: "/images/ereader.png",
-    year: "2024",
-    link: "https://www.behance.net/raksmeyrat",
+    image: "/images/music.png",
+    year: "2023",
+    link: "https://www.behance.net/gallery/193454669/Music-Streaming-Redesign-Concept",
     isFeatured: true,
   },
 ];
@@ -94,13 +96,13 @@ const Portfolio = () => {
                   key={item.id}
                   className="lg:space-y-4 space-y-2 rounded-xl"
                 >
-                  <div className="h-[300px]">
+                  <div className="h-[350px]">
                     <Image
                       src={item.image}
                       alt="Portfolio"
                       width={600}
                       height={600}
-                      className=" rounded-t h-[300px] object-cover"
+                      className=" rounded-t h-full object-cover"
                     />
                   </div>
                   <div className="space-y-2">
@@ -141,13 +143,13 @@ const Portfolio = () => {
                   key={item.id}
                   className="lg:space-y-4 space-y-2 rounded-xl"
                 >
-                  <div className="h-[300px]">
+                  <div className="h-[350px]">
                     <Image
                       src={item.image}
                       alt="Portfolio"
                       width={600}
                       height={600}
-                      className=" rounded-t h-[300px] object-cover"
+                      className=" rounded-t h-full object-cover"
                     />
                   </div>
                   <div className="space-y-2">
@@ -192,13 +194,13 @@ const Portfolio = () => {
                 rel="noopener noreferrer"
                 className="lg:space-y-4 space-y-2 rounded-xl"
               >
-                <div className="h-[300px]">
+                <div className="h-[350px]">
                   <Image
                     src={item.image}
                     alt="Portfolio"
                     width={600}
                     height={600}
-                    className=" rounded-t h-[300px] object-cover"
+                    className=" rounded-t h-full object-cover"
                   />
                 </div>
                 <div className="space-y-2">
@@ -242,13 +244,13 @@ const Portfolio = () => {
                 key={item.id}
                 className="lg:space-y-4 space-y-2 rounded-xl"
               >
-                <div className="h-[300px]">
+                <div className="h-[350px]">
                   <Image
                     src={item.image}
                     alt="Portfolio"
                     width={600}
                     height={600}
-                    className=" rounded-t h-[300px] object-cover"
+                    className=" rounded-t h-full object-cover"
                   />
                 </div>
                 <div className="space-y-2">

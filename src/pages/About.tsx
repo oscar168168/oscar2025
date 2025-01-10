@@ -27,7 +27,7 @@ const About = () => {
         height={120}
         className="rounded-full border-primary"
       />
-      <CVDownloadButton cvUrl="/images/account.png" />
+      <CVDownloadButton cvUrl="/images/cv.pdf" />
     </main>
   );
 };

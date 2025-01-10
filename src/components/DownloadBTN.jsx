@@ -2,12 +2,12 @@
 import React from "react";
 import { Download } from "lucide-react";
 
-const CVDownloadButton = ({ cvUrl = "/images/account.png" }) => {
+const CVDownloadButton = ({ cvUrl = "/images/cv.pdf" }) => {
   const handleDownload = () => {
     // Create a temporary anchor element
     const link = document.createElement("a");
     link.href = cvUrl;
-    link.download = "/images/account.png"; // Default filename for download
+    link.download = "cv.pdf"; // Default filename for download
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
