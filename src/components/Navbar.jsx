@@ -117,9 +117,10 @@ export const Navbar = () => {
               </button>
             </div>
 
-            <div className="flex flex-col gap-12 h-[calc(100vh-104px)] px-4 py-40">
+            <div className="flex flex-col gap-12 h-[calc(100vh-104px)] px-4 py-32">
               {navlinks.map((link) => (
                 <Link
+                  onClick={() => setMobileMenuOpen(false)}
                   key={link.name}
                   href={link.href}
                   className={`block text-6xl font-light link ${
@@ -135,6 +136,7 @@ export const Navbar = () => {
               <div className="flex gap-6">
                 {links.map((item) => (
                   <Link
+                    onClick={() => setMobileMenuOpen(false)}
                     href={item.href}
                     key={item.href}
                     target="_blank"
