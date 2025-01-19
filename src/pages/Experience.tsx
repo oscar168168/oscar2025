@@ -45,7 +45,7 @@ const Experience = () => {
         <span className="text-primary">Experience</span> That Delivers{" "}
         <span className="text-primary">Results</span>
       </h2>
-      <div className="lg:space-y-12 space-y-8">
+      <div className="lg:space-y-16 space-y-8">
         {experiences.map((item) => (
           <div
             key={item.id}

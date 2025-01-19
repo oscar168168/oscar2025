@@ -90,7 +90,7 @@
   }
 
   p {
-    @apply lg:text-base text-sm tracking-wider lg:leading-7 font-extralight text-foreground/80;
+    @apply lg:text-base text-sm tracking-tight lg:leading-7 font-extralight text-foreground/80;
     font-family: var(--font-poppins);
   }
 
